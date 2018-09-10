@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx'
-import Button from './button.jsx'
+import Capacity from './capacity.jsx'
 import UpfrontPrice from './upfrontPrice.jsx'
 import MonthlyPrice from './monthlyPrice.jsx'
 import Picture from './picture.jsx'
 import Colour from './colour.jsx'
 
 ReactDOM.render(
-  <Button />,
+  <Capacity />,
   document.getElementById("capacity")
 );
 
