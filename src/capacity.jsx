@@ -1,6 +1,7 @@
 import React from 'react'
 import css from './capacity.css'
-import {updatePrice} from './monthlyPrice.jsx'
+import {updateMonthlyPrice} from './monthlyPrice.jsx'
+import {updateUpfrontPrice} from './upfrontPrice.jsx'
 
 export default class Capacity extends React.Component {
   constructor(props) {
@@ -11,18 +12,19 @@ export default class Capacity extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick(new_capacity, price){
+  handleClick(new_capacity, monthlyPrice, upfrontPrice){
     this.setState(state => ({
       capacity: new_capacity,
     }))
-    updatePrice(price)
+    updateMonthlyPrice(monthlyPrice)
+    updateUpfrontPrice(upfrontPrice)
   }
   render() {
     return (
       <div id="buttons">
       <p>Capacity: {this.state.capacity}</p>
-      <button onClick={this.handleClick.bind(this, '64', '$200')}>64</button>
-      <button onClick={this.handleClick.bind(this, '256', '$400')}>256</button>
+      <button onClick={this.handleClick.bind(this, '64', '$200', '$5m')}>64</button>
+      <button onClick={this.handleClick.bind(this, '256', '$400', '$10m')}>256</button>
       </div>
     )
   }

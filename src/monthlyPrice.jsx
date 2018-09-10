@@ -1,5 +1,5 @@
 import React from 'react'
-import Capacity from './capacity.jsx'
+// import Capacity from './capacity.jsx'
 
 export default class MonthlyPrice extends React.Component {
   constructor(props){
@@ -7,7 +7,7 @@ export default class MonthlyPrice extends React.Component {
     this.state = {
       price: '$100'
     }
-    updatePrice = updatePrice.bind(this)
+    updateMonthlyPrice = updateMonthlyPrice.bind(this)
   }
 
   render() {
@@ -19,9 +19,8 @@ export default class MonthlyPrice extends React.Component {
   }
 }
 
-export function updatePrice(new_price) {
+export function updateMonthlyPrice(new_price) {
   this.setState(state => ({
     price: new_price
   }))
-  console.log('update price')
 }
