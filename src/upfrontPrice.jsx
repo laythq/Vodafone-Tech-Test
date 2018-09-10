@@ -4,7 +4,7 @@ export default class UpfrontPrice extends React.Component {
   constructor(props){
     super(props)
       this.state = {
-        price: '$5m'
+        price: '£149'
       }
       updateUpfrontPrice = updateUpfrontPrice.bind(this)
     }

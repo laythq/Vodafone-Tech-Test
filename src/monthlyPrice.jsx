@@ -5,7 +5,7 @@ export default class MonthlyPrice extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      price: '$100'
+      price: '£43.20'
     }
     updateMonthlyPrice = updateMonthlyPrice.bind(this)
   }
