@@ -23,8 +23,8 @@ export default class Capacity extends React.Component {
     return (
       <div id="buttons">
       <p>Capacity: {this.state.capacity}</p>
-      <button onClick={this.handleClick.bind(this, '64', '£43.20', '£149')}>64</button>
-      <button onClick={this.handleClick.bind(this, '256', '£46.80', '£275')}>256</button>
+      <button id="sixtyfour" onClick={this.handleClick.bind(this, '64', '£43.20', '£149')}>64</button>
+      <button id="twofivesix" onClick={this.handleClick.bind(this, '256', '£46.80', '£275')}>256</button>
       </div>
     )
   }
