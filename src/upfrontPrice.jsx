@@ -1,26 +1,26 @@
-import React from 'react'
+import React from 'react';
 
 export default class UpfrontPrice extends React.Component {
-  constructor(props){
-    super(props)
-      this.state = {
-        price: '£149'
-      }
-      updateUpfrontPrice = updateUpfrontPrice.bind(this)
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      price: '£149',
+    };
+    updateUpFrontPrice = updateUpFrontPrice.bind(this);
+  }
 
 
   render() {
     return (
       <div>
-      <p> From {this.state.price} upfront cost </p>
+      <p>From {this.state.price} upfront cost</p>
       </div>
-    )
+    );
   }
 }
 
-export function updateUpfrontPrice(new_price) {
-  this.setState(state => ({
-    price: new_price
-  }))
+export function updateUpFrontPrice(newPrice) {
+  this.setState({
+    price: newPrice,
+  });
 }
