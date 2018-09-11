@@ -1,0 +1,37 @@
+button {
+  background-color: white; /* Green */
+      border: 1px solid black;
+      color: black;
+      /* padding: 1px 1px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 10px;
+    }
+
+    #gold {
+      margin-left: 0px
+    }
+
+    #sixtyfour {
+      margin-left: 0px
+    }
+
+  content {
+    padding: 0px 0px
+  }
+
+  .no-padding {
+    padding: 0px !important;
+   }
+
+   .no-left {
+     padding-left: 0px !important
+   }
+
+   .no-right {
+     padding-right: 0px !important
+   }

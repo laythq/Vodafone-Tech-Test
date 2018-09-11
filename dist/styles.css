@@ -1,0 +1,27 @@
+#title {
+    font-size: 35px;
+}
+
+#stars {
+  width: 150px;
+  height: auto;
+}
+
+#description {
+  font-size: 15px;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  border: 1px solid black;
+}
+
+/* #header {
+  margin-bottom: 20px
+} */

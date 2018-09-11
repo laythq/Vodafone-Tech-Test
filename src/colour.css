@@ -1,0 +1,19 @@
+#space_grey {
+  background-color: black;
+  /* padding: 12px 12px; */
+}
+
+#gold {
+  background-color: gold;
+  /* padding: 12px 12px; */
+}
+
+#silver {
+  background-color: grey;
+  /* padding: 12px 12px; */
+}
+
+button {
+  min-width: 45px;
+  min-height: 35px
+}
