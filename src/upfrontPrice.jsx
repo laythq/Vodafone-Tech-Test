@@ -1,5 +1,4 @@
 import React from 'react'
-// import updateUpfrontPrice from './updatePrice.jsx'
 
 export default class UpfrontPrice extends React.Component {
   constructor(props){
@@ -14,7 +13,7 @@ export default class UpfrontPrice extends React.Component {
   render() {
     return (
       <div>
-      <p> From {this.state.price} upfront cost </p>
+      <p>From {this.state.price} upfront cost</p>
       </div>
     )
   }

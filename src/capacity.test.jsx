@@ -12,21 +12,47 @@ describe('Capacity component', () => {
   it('renders two buttons and a string', () => {
     const capacity_buttons = shallow(<Capacity />).find("button")
     const capacity_string = shallow(<Capacity />).find("p")
-    expect(capacity_buttons.length).toBeGreaterThan(1)
-    expect(capacity_string.length).toBeGreaterThan(0)
+    expect(capacity_buttons.length).toBe(2)
+    expect(capacity_string.length).toBe(1)
   })
 
-  it('changes the Capacity description whenever the button is pressed', () => {
-    const sixtyfour = wrapper.find('button').at(0)
-    sixtyfour.simulate('click')
-    const capacity = wrapper.find('p').text()
-    expect(capacity).toEqual("Capacity: 64")
-  })
+  describe('64GB Button', () => {
+    beforeAll(() => {
+      const sixtyfour = wrapper.find('button').at(0)
+      sixtyfour.simulate('click')
+    })
 
-  it('changes the Capacity string whenever the button is pressed', () => {
-    const twofivesix = wrapper.find('button').at(1)
-    twofivesix.simulate('click')
-    const capacity = wrapper.find('p').text()
-    expect(capacity).toEqual("Capacity: 256")
+    it('changes the Capacity description whenever the button is pressed', () => {
+      const capacity = wrapper.find('p').text()
+      expect(capacity).toEqual("Capacity: 64")
+    })
+
+    it('calls #updateMonthlyPrice with the monthly price when the first button is clicked', () => {
+      expect(dependency1.updateMonthlyPrice.mock.calls).toEqual([["£43.20"]])
+    })
+
+    it('calls #updateUpFrontPrice with the upfront price when the first button is clicked', () => {
+      expect(dependency2.updateUpFrontPrice.mock.calls).toEqual([["£149"]])
+    })
+
+  describe('256GB Button', () => {
+    beforeAll(() => {
+      const twofivesix = wrapper.find('button').at(1)
+      twofivesix.simulate('click')
+    })
+
+    it('changes the Capacity string whenever the button is pressed', () => {
+      const capacity = wrapper.find('p').text()
+      expect(capacity).toEqual("Capacity: 256")
+    })
+
+    it('calls #updateMonthlyPrice with the monthly price when the first button is clicked', () => {
+      expect(dependency1.updateMonthlyPrice.mock.calls[1]).toEqual(["£46.80"])
+    })
+
+    it('calls #updateUpFrontPrice with the upfront price when the first button is clicked', () => {
+      expect(dependency2.updateUpFrontPrice.mock.calls[1]).toEqual(["£275"])
+    })
+  })
   })
 })
