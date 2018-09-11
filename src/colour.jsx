@@ -1,5 +1,5 @@
 import React from 'react'
-import './colour.css'
+import './styles/colour.css'
 import {updateImage} from './picture.jsx'
 
 const goldImage = "./Apple_iPhone_8_Gold-full-product-front.png"
