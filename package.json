@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" ",
+    "test": "jest",
     "start": "webpack-dev-server"
   },
   "repository": {
@@ -16,18 +16,29 @@
   "bugs": {
     "url": "https://github.com/laythq/Vodafone-Tech-Test/issues"
   },
+  "jest": {
+    "moduleNameMapper": { ".*css$": "<rootDir>/__mocks__/styleMock.js" },
+    "setupTestFrameworkScriptFile" : "<rootDir>/setupTests.js"
+  },
   "homepage": "https://github.com/laythq/Vodafone-Tech-Test#readme",
   "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.2",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "regenerator-runtime": "^0.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",

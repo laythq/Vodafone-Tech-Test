@@ -1,5 +1,4 @@
 import React from 'react'
-// import Capacity from './capacity.jsx'
 
 export default class MonthlyPrice extends React.Component {
   constructor(props){
@@ -13,7 +12,7 @@ export default class MonthlyPrice extends React.Component {
   render() {
     return (
       <div>
-      <p> When you pay {this.state.price} a month</p>
+      <p>When you pay {this.state.price} a month</p>
       </div>
     )
   }

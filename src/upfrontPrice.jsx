@@ -1,4 +1,5 @@
 import React from 'react'
+// import updateUpfrontPrice from './updatePrice.jsx'
 
 export default class UpfrontPrice extends React.Component {
   constructor(props){
@@ -6,7 +7,7 @@ export default class UpfrontPrice extends React.Component {
       this.state = {
         price: '£149'
       }
-      updateUpfrontPrice = updateUpfrontPrice.bind(this)
+      updateUpFrontPrice = updateUpFrontPrice.bind(this)
     }
 
 
@@ -19,7 +20,7 @@ export default class UpfrontPrice extends React.Component {
   }
 }
 
-export function updateUpfrontPrice(new_price) {
+export function updateUpFrontPrice(new_price) {
   this.setState(state => ({
     price: new_price
   }))
