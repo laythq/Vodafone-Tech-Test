@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/capacity.css';
-import { updateMonthlyPrice } from './monthlyPrice';
-import { updateUpFrontPrice } from './upfrontPrice';
+import { updateMonthlyPrice } from './monthlyPrice.jsx';
+import { updateUpFrontPrice } from './upfrontPrice.jsx';
 
 export default class Capacity extends React.Component {
   constructor(props) {

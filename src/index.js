@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Capacity from './capacity';
-import UpfrontPrice from './upfrontPrice';
-import MonthlyPrice from './monthlyPrice';
-import Picture from './picture';
-import Colour from './colour';
+import Capacity from './capacity.jsx';
+import UpfrontPrice from './upfrontPrice.jsx';
+import MonthlyPrice from './monthlyPrice.jsx';
+import Picture from './picture.jsx';
+import Colour from './colour.jsx';
 
 ReactDOM.render(
   <Capacity />,

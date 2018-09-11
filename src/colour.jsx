@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/colour.css';
-import { updateImage } from './picture';
+import { updateImage } from './picture.jsx';
 
 const goldImage = './Apple_iPhone_8_Gold-full-product-front.png';
 const silverImage = './Apple_iPhone_8_Silver_WS2-full-product-front.png';
