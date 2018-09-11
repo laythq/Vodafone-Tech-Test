@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Colour from './colour.jsx';
-import * as dependency from './picture.jsx'
+import Colour from '../colour.jsx';
+import * as dependency from '../picture.jsx'
 
 describe('Colour component', () => {
   dependency.updateImage = jest.fn()

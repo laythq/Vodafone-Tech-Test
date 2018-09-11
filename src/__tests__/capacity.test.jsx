@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Capacity from './capacity.jsx';
-import * as dependency1 from './monthlyPrice.jsx'
-import * as dependency2 from './upfrontPrice.jsx'
+import Capacity from '../capacity.jsx';
+import * as dependency1 from '../monthlyPrice.jsx'
+import * as dependency2 from '../upfrontPrice.jsx'
 
 describe('Capacity component', () => {
   dependency1.updateMonthlyPrice = jest.fn()

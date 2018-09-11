@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Picture from './picture.jsx';
+import Picture from '../picture.jsx';
 
 describe('Picture Component', () => {
   const picture = shallow(<Picture />)

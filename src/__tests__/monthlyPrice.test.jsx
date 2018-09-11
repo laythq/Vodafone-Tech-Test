@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import MonthlyPrice from './monthlyPrice.jsx';
+import MonthlyPrice from '../monthlyPrice.jsx';
 
 describe('Monthly Price Component', () => {
   it('should render £43.20 by default', () => {

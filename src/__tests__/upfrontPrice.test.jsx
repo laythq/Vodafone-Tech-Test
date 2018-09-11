@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import UpfrontPrice from './upfrontPrice.jsx';
+import UpfrontPrice from '../upfrontPrice.jsx';
 
 describe('Upfront Price Component', () => {
 
