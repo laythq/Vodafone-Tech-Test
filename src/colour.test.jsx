@@ -14,22 +14,52 @@ describe('Colour component', () => {
     expect(colour_string.length).toBe(1)
   })
 
-  it('changes the Colour description whenever the gold is pressed', () => {
-    const gold = wrapper.find('button').at(0)
-    gold.simulate('click')
-    const description = wrapper.find('p').text()
-    expect(description).toEqual("Colour: Gold")
+  describe('Gold button', () => {
+    beforeAll(() => {
+      const gold = wrapper.find('button').at(0)
+      gold.simulate('click')
+    })
+
+    it('changes the Colour description whenever the gold is pressed', () => {
+      const description = wrapper.find('p').text()
+      expect(description).toEqual("Colour: Gold")
+    })
+
+    it('calls #updateImage with the gold image when clicked', () => {
+      expect(dependency.updateImage.mock.calls).toEqual([['./Apple_iPhone_8_Gold-full-product-front.png']])
+    })
   })
-  it('changes the Colour description whenever the silver is pressed', () => {
-    const silver = wrapper.find('button').at(1)
-    silver.simulate('click')
-    const description = wrapper.find('p').text()
-    expect(description).toEqual("Colour: Silver")
+
+  describe('Silver button', () => {
+    beforeAll(() => {
+      const silver = wrapper.find('button').at(1)
+      silver.simulate('click')
+    })
+
+    it('changes the Colour description whenever the silver is pressed', () => {
+      const description = wrapper.find('p').text()
+      expect(description).toEqual("Colour: Silver")
+    })
+
+    it('calls #updateImage with the silver image when clicked', () => {
+      expect(dependency.updateImage.mock.calls[1]).toEqual(['./Apple_iPhone_8_Silver_WS2-full-product-front.png'])
+    })
   })
-  it('changes the Colour description whenever the spacegrey is pressed', () => {
-    const grey = wrapper.find('button').at(2)
-    grey.simulate('click')
-    const description = wrapper.find('p').text()
-    expect(description).toEqual("Colour: Space Grey")
+
+  describe('Space Grey button', () => {
+    beforeAll(() => {
+      const spacegrey = wrapper.find('button').at(2)
+      spacegrey.simulate('click')
+    })
+
+    it('changes the Colour description whenever the Space Grey is pressed', () => {
+      const description = wrapper.find('p').text()
+      expect(description).toEqual("Colour: Space Grey")
+    })
+
+    it('calls #updateImage with the space grey image when clicked', () => {
+      expect(dependency.updateImage.mock.calls[2]).toEqual(['./Apple_iPhone_8_Space_Grey_WS2-full-product-front.png'])
+    })
   })
+
 })

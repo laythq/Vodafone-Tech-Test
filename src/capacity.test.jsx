@@ -10,8 +10,8 @@ describe('Capacity component', () => {
   const wrapper = shallow(<Capacity />)
 
   it('renders two buttons and a string', () => {
-    const capacity_buttons = shallow(<Capacity />).find("button")
-    const capacity_string = shallow(<Capacity />).find("p")
+    const capacity_buttons = wrapper.find("button")
+    const capacity_string = wrapper.find("p")
     expect(capacity_buttons.length).toBe(2)
     expect(capacity_string.length).toBe(1)
   })
