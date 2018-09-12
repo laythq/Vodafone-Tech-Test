@@ -1,6 +1,6 @@
 # Vodafone-Tech-Test
 
-![](https://raw.githubusercontent.com/laythq/Vodafone-Tech-Test/master/Screenshot.38.57.png)
+![](https://raw.githubusercontent.com/laythq/Vodafone-Tech-Test/blob/master/Screenshot.38.57.png?raw=true)
 
 This task was completed according to the following specifications:
 
