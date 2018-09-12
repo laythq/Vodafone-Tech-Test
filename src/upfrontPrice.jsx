@@ -13,7 +13,7 @@ export default class UpfrontPrice extends React.Component {
   render() {
     return (
       <div>
-      <p>From {this.state.price} upfront cost</p>
+      <p>From <span style={{fontSize: '30px', color:'red'}}>{this.state.price}</span> upfront cost</p>
       </div>
     );
   }
