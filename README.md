@@ -28,7 +28,7 @@ To test component integration I used Cypress. It tests the basic features and us
 
 then, to see the tests run in the command line, in a separate terminal window run:
 
-`npx cypress run --spec ./cypress/integration/features_spec`
+`npx cypress run --spec ./cypress/integration/features_spec.js`
 
 To see the Cypress tests run visually, open cypress with `npx cypress open`, and click on features_spec.js.
 
