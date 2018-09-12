@@ -4,7 +4,7 @@
 
 This task was completed according to the following specifications:
 
-A phone component as displayed in ‘page.jpeg’ that will display in Chrome, IE11 and Firefox. On selection of a colour or capacity the image will change and the prices will update.
+A phone component as displayed in ‘./developer_task/page.jpeg’. On selection of a colour or capacity the image will change and the prices will update.
 
 ## Approach
 
