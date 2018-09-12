@@ -39,3 +39,5 @@ For all other non-React elements in the page, I used HTML with Bootstrap. The Bo
 I had to prioritise certain features and elements of this app due to time constraints. Therefore the styling is not as good as it could be, although I think it comes close to mimicking that of the sample image (see ./developer_task/page.jpeg).
 
 For the same reason, I did not have time to test implementation in IE11 and Firefox. It has been tested in Chrome through Cypress.
+
+Lastly, I tried to implement a continuous integration process with Travis CI, by working on separate branches and periodically pulling into master. This process was working fine until I came across a build issue relating to Travis and the version of node that it runs for each build. The problem was triggered by a module I installed towards the end of the project but I could not determine which form the error message. The issue had been reported by a number of other [users](https://github.com/sass/node-sass/issues/2100) but I was unable to find an adequate solution due to time constraints. Unfortunately I had to disable Travis for my last PR and manually test the build on a colleague's laptop.
