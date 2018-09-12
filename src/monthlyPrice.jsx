@@ -13,7 +13,7 @@ export default class MonthlyPrice extends React.Component {
     return (
       <div>
         <p>
-          When you pay {this.state.price} a month
+          When you pay <span style={{fontSize: '30px', color:'red'}}>{this.state.price}</span> a month
         </p>
       </div>
     );
