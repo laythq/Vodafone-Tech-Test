@@ -1,5 +1,7 @@
 # Vodafone-Tech-Test
 
+![](https://raw.githubusercontent.com/laythq/Vodafone-Tech-Test/master/Screenshot.38.57.png)
+
 This task was completed according to the following specifications:
 
 A phone component as displayed in ‘page.jpeg’ that will display in Chrome, IE11 and Firefox. On selection of a colour or capacity the image will change and the prices will update.
@@ -31,13 +33,3 @@ For all other non-React elements in the page, I used HTML with Bootstrap. The Bo
 I had to priorities certain features and elements of this app due to time constraints. Therefore the styling is not as good as it could be, although I think it comes close to mimicking that of the sample image (see ./developer_task/page.jpeg).
 
 For the same reason, I did not have time to test implementation in IE11 and Firefox. This app has been tested in Chrome through Cypress.
-
- HTML – Your markup must be readable, semantic and concise
- CSS – You can use whichever pre-processor you like
- JS – Create a succinct JavaScript solution
-o You may use any frameworks you like, but ensure there is reason and purpose behind your choice(s)
-o Please try and create a build process
- Consider future reuse and maintenance of code
- Provide documentation for both build process and at code level via
-comments (where needed) The assets are available here –
-https://www.dropbox.com/s/1tv9ign3bosjbvv/developer_task.zip?dl=0
