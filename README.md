@@ -10,7 +10,7 @@ A phone component as displayed in ‘page.jpeg’ that will display in Chrome, I
 
 I decided to build this component as a single page application using the React JS framework, for dynamic rendering of multiple components, including: the image, capacity, colour and price descriptions. The page is therefore split into two parent-child relations that allow the parents (the colour and capacity buttons) to update the state of the children (the image and prices).
 
-Having two parent-child relationships was the simplest solution I could think of for this problem, as it reflected the dependency of the image and prices on the capacity and colour selected. The parents update the state of their children through functions written in each child component (#updateMonthlyCost, #updateUpFrontCost, and #updateImage), which is bound to that child and exported to the parent. When the parent calls each function with specific arguments, the function updates the child's state and causes the child component to re-render correctly.
+Having two parent-child relationships was the simplest solution I could think of for this problem, as it reflected the dependency of the image and prices on the capacity and colour selected. The parents update the state of their children through a function written in each child component (#updateMonthlyCost, #updateUpFrontCost, and #updateImage), which is bound to that child and exported to the parent. When the parent calls each function with specific arguments, the function updates the child's state and causes the child component to re-render correctly.
 
 The application is built with webpack and babel, and can be run and tested using the npm scripts below.
 
