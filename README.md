@@ -22,11 +22,11 @@ To run the application locally at `localhost:8080`, run `npm start` and navigate
 
 This app is unit tested with Enzyme and Jest. Each component is tested individually and I have tried to isolate each test from some of its dependencies using the Jest mocking function. I have tried to focus all testing output rather than implementation, and left all integration testing to my feature test. Unit tests can be run with `npm test`.
 
-To test component integration I used Cypress. It tests the basic features and user stories as listed in the specifications, i.e. whenever colour or capacity is changed, the image and price descriptions will change accordingly. To run the Cypress tests start the application with:
+To test component integration I used Cypress. It tests the basic features and user stories as listed in the specifications, i.e. whenever colour or capacity is changed, the image and price descriptions will change accordingly. To run the Cypress tests you may first have to install cypress with `npm install cypress`. Then, start the application with:
 
 `npm start`
 
-then, to see the tests run in the command line, in a separate terminal window run:
+To see the tests run in the command line, in a separate terminal window run:
 
 `npx cypress run --spec ./cypress/integration/features_spec.js`
 
