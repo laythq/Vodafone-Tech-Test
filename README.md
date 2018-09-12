@@ -8,9 +8,9 @@ A phone component as displayed in ‘page.jpeg’ that will display in Chrome, I
 
 ## Approach
 
-I decided to build this component as a single page application using the React JS framework, which allowed the dynamic rendering of multiple components, including: the image, capacity, colour and price descriptions. The page is therefore split into two parent-child relations that allow the parents (the colour and capacity buttons) to update the state of the children (the image and prices).
+I decided to build this component as a single page application using the React JS framework, for dynamic rendering of multiple components, including: the image, capacity, colour and price descriptions. The page is therefore split into two parent-child relations that allow the parents (the colour and capacity buttons) to update the state of the children (the image and prices).
 
-These two parent-child relationships was the simplest solution I could think of for this problem, as it reflected the dependency of the image and prices on the capacity and colour selected. The parents update the state of their children through functions written in each child module (#updateMonthlyCost, #updateUpFrontCost, and #updateImage), which is bound to that child and exported to the parent. When the parent calls each function with specific arguments, the function updates the child's state and causes the child component to re-render correctly.
+Having two parent-child relationships was the simplest solution I could think of for this problem, as it reflected the dependency of the image and prices on the capacity and colour selected. The parents update the state of their children through functions written in each child component (#updateMonthlyCost, #updateUpFrontCost, and #updateImage), which is bound to that child and exported to the parent. When the parent calls each function with specific arguments, the function updates the child's state and causes the child component to re-render correctly.
 
 The application is built with webpack and babel, and can be run and tested using the npm scripts below.
 
@@ -38,4 +38,4 @@ For all other non-React elements in the page, I used HTML with Bootstrap. The Bo
 
 I had to prioritise certain features and elements of this app due to time constraints. Therefore the styling is not as good as it could be, although I think it comes close to mimicking that of the sample image (see ./developer_task/page.jpeg).
 
-For the same reason, I did not have time to test implementation in IE11 and Firefox. This app has been tested in Chrome through Cypress.
+For the same reason, I did not have time to test implementation in IE11 and Firefox. It has been tested in Chrome through Cypress.
